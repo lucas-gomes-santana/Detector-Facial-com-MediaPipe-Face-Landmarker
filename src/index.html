@@ -17,31 +17,31 @@ limitations under the License. -->
   <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <title>Face Landmarker</title>
+  <title>MediaPipe Face Landmarker</title>
   <link href="./style.css" rel="stylesheet">
   <script type="module" src="./script.js"></script>
 </head>
 <body>
-  <h1>Face landmark detection using the MediaPipe FaceLandmarker task</h1>
+  <h1>Detector de Pontos Faciais com MediaPipe Face Landmarker</h1>
 
   <section id="demos" class="invisible">
-    <h2>Demo: Detecting Images</h2>
-    <p><b>Click on an image below</b> to see the key landmarks of the face.</p>
+    <h2>Detectando Imagens</h2>
+    <p><b>Clique na imagem abaixo</b> para ver os principais pontos de referência do rosto.</p>
 
     <div class="detectOnClick">
-      <img src="https://storage.googleapis.com/mediapipe-assets/portrait.jpg" width="100%" crossorigin="anonymous" title="Click to get detection!" />
+      <img src="https://storage.googleapis.com/mediapipe-assets/portrait.jpg" width="100%" crossorigin="anonymous" title="Clique para obter detecção!" />
     </div>
     <div class="blend-shapes">
       <ul class="blend-shapes-list" id="image-blend-shapes"></ul>
     </div>
 
-    <h2>Demo: Webcam continuous face landmarks detection</h2>
-    <p>Hold your face in front of your webcam to get real-time face landmarker detection.</br>Click <b>enable webcam</b> below and grant access to the webcam if prompted.</p>
+    <h2>Detecção Contínua de Pontos Faciais via Webcam</h2>
+    <p>Posicione seu rosto em frente à webcam para obter detecção de pontos faciais em tempo real.</br>Clique em <b>habilitar webcam</b> abaixo e permita o acesso à webcam quando solicitado.</p>
 
     <div id="liveView" class="videoView">
       <button id="webcamButton" class="mdc-button mdc-button--raised">
         <span class="mdc-button__ripple"></span>
-        <span class="mdc-button__label">ENABLE WEBCAM</span>
+        <span class="mdc-button__label">Habilitar Webcam</span>
       </button>
       <div style="position: relative;">
         <video id="webcam" style="position: abso" autoplay playsinline></video>

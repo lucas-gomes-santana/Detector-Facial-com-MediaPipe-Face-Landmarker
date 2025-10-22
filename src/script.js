@@ -16,7 +16,6 @@ import { FaceLandmarker, FilesetResolver, DrawingUtils } from "https://cdn.jsdel
 const demosSection = document.getElementById("demos");
 const imageBlendShapes = document.getElementById("image-blend-shapes");
 const videoBlendShapes = document.getElementById("video-blend-shapes");
-// ...existing code...
 
 let faceLandmarker;
 let runningMode = "VIDEO";
@@ -185,7 +184,6 @@ function enableCam(event) {
     enableWebcamButton.innerText = "DISABLE PREDICTIONS";
   }
 
-  // Troque para modo VIDEO antes de iniciar a detecção
   if (runningMode !== "VIDEO") {
     runningMode = "VIDEO";
     faceLandmarker.setOptions({ runningMode });
